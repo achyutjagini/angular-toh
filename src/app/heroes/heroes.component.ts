@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Hero } from '../hero';
+import { HEROES } from '../mock-heroes';
 
 @Component({
   //component css element selector
@@ -13,8 +14,9 @@ import { Hero } from '../hero';
 })
 
 export class HeroesComponent {
-  hero: Hero = {
+  /*hero: Hero = {
     id: 1,
     name: 'Windstorm'
-  };
+  };*/
+  heroes = HEROES;
 }
